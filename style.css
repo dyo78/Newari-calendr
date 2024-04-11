@@ -1,0 +1,185 @@
+body {
+   
+  font-family: 'cairo';
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  
+}
+.bg-img{
+  background-image: url('./images/kumari1.png');
+  background-size: cover; 
+  background-position: center;
+  height: 110vh;
+  width: 98.5vw;
+  position: absolute;
+  z-index: -1;
+  filter: blur(4px);
+}
+
+#container {
+  
+  display: flex;
+  width: 100%;
+  height: 730px;
+
+}
+#festivals{
+  color: rgb(131, 23, 23);
+  
+}
+#calendar-container {
+  width: 70%;
+  padding-top: 20px;
+  padding-left: 20px;
+  
+}
+
+#calendar {
+ 
+  opacity: 0.8;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  overflow: hidden;
+}
+ul{
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+}
+ul li{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: block;
+}
+
+table {
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+
+
+}
+
+th, td {
+  border: 2px solid rgb(113, 111, 111);
+  box-shadow: inset;
+  
+  padding: 8px;
+  text-align: left; 
+  height: 9.8vh;
+  width: 10vw;
+  font-size: 20px;
+  background-color: #fff;
+}
+
+th {
+  background-color: #fff;
+  color: red;
+  text-align: center;
+}
+
+td.day {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+td.day:hover {
+  background-color: #d35400;
+  color: #fff;
+}
+
+#events-container {
+  width: 400px;
+  height: 40%;
+  font-family: sans-serif;
+  margin-top: 20px; /* Add some space above */
+  margin-left: 20px; /* Add some space above */
+  background-color: rgba(255, 255, 255, 0.8); 
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  border-radius: 10px;
+  color: black;
+  order: 1;
+  overflow-y: scroll;
+}
+
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#prevButton {
+  position: absolute;
+  top: 50px;
+  left: 70px;
+}
+
+#nextButton {
+  position: absolute;
+  top: 50px;
+  left: 62%;
+}
+.Panchang{
+  position: absolute;
+  top: 50%;
+  left:73%;
+  width: 400px;
+}
+
+button:hover {
+  background-color: #a04000;
+}
+#buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  z-index: 1;
+}
+@media screen and (max-width: 950px)  {
+  ul li{
+    font-size: 10px;
+  }
+  
+}
+@media screen and (max-width: 820px)  {
+  
+  #prevButton {
+    position: absolute;
+    top: 40px;
+    left: 70px;
+  }
+  
+  #nextButton {
+    position: absolute;
+    top: 40px;
+    left:50%;
+  }
+}
+@media screen and (max-width: 500px)  {
+  
+  #prevButton {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+  }
+  
+  #nextButton {
+    position: absolute;
+    top: 40px;
+    left:45%;
+  }
+}
+
+/* Rest of your existing styles */
